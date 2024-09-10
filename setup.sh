@@ -12,7 +12,7 @@ adduser --system --group --disabled-password --shell /bin/bash --home /home/git 
 
 # Fetch and set up gitea binary
 wget https://dl.gitea.io/gitea/$GITEA_VERSION/gitea-$GITEA_VERSION-linux-amd64
-cp gitea-1.14.6-linux-amd64 /usr/bin/gitea && chmod 755 /usr/bin/gitea
+cp gitea-$GITEA_VERSION-linux-amd64 /usr/bin/gitea && chmod 755 /usr/bin/gitea
 mkdir -p /etc/gitea /var/lib/gitea/{custom,data,indexers,public,log}
 chown git:git /etc/gitea /var/lib/gitea/{custom,data,indexers,public,log}
 chmod 750 /var/lib/gitea/{data,indexers,log}
